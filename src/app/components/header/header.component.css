@@ -1,15 +1,43 @@
-.header{
-    width: 100%;
+.header {
     background-color: #252525;
+    width: 100%;
     height: 60px;
     box-shadow: 0 8px 32px 0 rgba(219, 219, 219, 0.411);
 }
-.nav-cont{
-    width: 90%;
-    margin: 0 auto;
+  
+.nav-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
-
-.nav-cont .title{
+  
+.title {
     line-height: 60px;
     color: #f2f2f2;
+}
+
+.cont-nav-item ul {
+    list-style-type: none;
+    display: flex;
+}
+  
+
+.cont-nav-item ul li {
+    height: 60px;
+    color: #f2f2f2;
+    display: block;margin-right: 20px;
+}
+  
+.cont-nav-item ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+  
+  /* Efecto hover para los enlaces */
+.cont-nav-item ul li a:hover {
+    background-color: #575757;
 }
