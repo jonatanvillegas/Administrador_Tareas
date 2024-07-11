@@ -17,7 +17,7 @@ export class CardComponent {
     this.Tareas = this.TareaServicio.ObtenerTareas();
   }
 
-  AgregarTare(even: Event, nuevaTarea: HTMLInputElement) {
+AgregarTare(even: Event, nuevaTarea: HTMLInputElement) {
     //previniendo el default del submit
     even.preventDefault();
     const nuevaTareaTexto = nuevaTarea.value.trim();
