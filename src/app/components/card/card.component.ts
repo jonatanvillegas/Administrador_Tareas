@@ -10,6 +10,7 @@ export class CardComponent {
  Tareas:Tarea[] = [];
  nuevaTarea:String = "";
 
+
   AgregarTare(even:Event){
     //previniendo el default del submit
     even.preventDefault();

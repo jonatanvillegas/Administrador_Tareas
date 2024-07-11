@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Tarea } from 'src/app/model/tarea';
 
 @Component({
   selector: 'app-list-task',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./list-task.component.css']
 })
 export class ListTaskComponent {
-
+  
 }
