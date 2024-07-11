@@ -1,10 +1,10 @@
 <main class="Card">
   <div class="juntar">
     <!-- creando el evento submit -->
-    <form action="" (submit)="AgregarTare($event)">
-      <input type="text" name="tarea" id="" placeholder="Create your task here.." >
+    <form action="" (submit)="AgregarTare($event,nuevaTarea)">
+      <input type="text" name="tarea" #nuevaTarea id="" placeholder="Create your task here.." >
+      <button class="" type="submit">add</button>
     </form>
-    <button class="" type="submit">add</button>
   </div>
   <div>
     <div>
