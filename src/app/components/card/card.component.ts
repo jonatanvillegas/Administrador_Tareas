@@ -8,16 +8,11 @@ import { TareaServicioService } from 'src/app/tarea-servicio.service';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-  Tareas: Tarea[] = [];
 
   constructor(private TareaServicio: TareaServicioService) { }
 
-  //se ejecuta una ves que el componente es renderizado es como useEffect
-  ngOnInit(): void {
-    this.Tareas = this.TareaServicio.ObtenerTareas();
-  }
 
-AgregarTare(even: Event, nuevaTarea: HTMLInputElement) {
+  AgregarTare(even: Event, nuevaTarea: HTMLInputElement) {
     //previniendo el default del submit
     even.preventDefault();
     const nuevaTareaTexto = nuevaTarea.value.trim();
@@ -26,7 +21,7 @@ AgregarTare(even: Event, nuevaTarea: HTMLInputElement) {
       //agregando tarea
       this.TareaServicio.AgregarTarea(tarea);
       //obteniendo tareas del localstorage
-      this.Tareas = this.TareaServicio.ObtenerTareas()
+      this.TareaServicio.Tareas = this.TareaServicio.ObtenerTareas()
       nuevaTarea.value = ""
     } else {
       alert("tienes que agregar el nombre a la tarea..")

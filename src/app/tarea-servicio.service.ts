@@ -7,6 +7,9 @@ import { Tarea } from './model/tarea';
 export class TareaServicioService {
   // nombre del key
   private key = "tareas";
+
+  Tareas: Tarea[] = [];
+  
   constructor() { }
 
   //obtiendo los valores de localstorage
@@ -28,4 +31,6 @@ export class TareaServicioService {
     tareas.push(tarea);
     this.GuardarTare(tareas);
   }
+
+
 }
